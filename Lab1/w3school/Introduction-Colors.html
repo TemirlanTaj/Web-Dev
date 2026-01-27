@@ -1,0 +1,215 @@
+<!DOCTYPE html> <!--I typed ! + Tab to write this template-->
+<html lang="en">
+<head> <!--contains mets data of the document like title-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название документа</title> <!--title of the document-->
+</head>
+<body> <!--body of the document-->
+    <h1>Text</h1> <!--large heading -->
+    <p>Text</p> <!--paragraph text-->
+
+
+<!--Editors-->
+<!--
+Step 1: Open Notepad 
+Step 2: Write some html code into notepad 
+Step 3: Save as .html  
+Step 4: Open file with double click and you can see your html page
+-->
+
+<!--Basics-->
+<!--
+Headings are defined with the <h1> to <h6> tags
+Paragraphs are defined with the <p> tag
+Links are defined with the <a> tag, href attribute is the link destination (ex <a> href="youtube.com" </a>)
+The source file (src), alternative text (alt), width, and height
+View HTML Source Code: CTRL + U
+-->
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">This is a link</a>
+    <img src="w3schools.png" alt="W3Schools.com" width="104" height="142">
+
+<!--Elements-->
+<!--
+<tagname>Content goes here...</tagname>
+HTML elements can be nested
+Never Skip the End Tag </tagname>
+The <br> tag defines a line break
+HTML is Not Case Sensitive: <P> means the same as <p>
+-->
+
+    <p>This is a <br> paragraph with a line break.</p>
+    <P>The same thig, but it is recommended lowercase in HTML</P>
+
+<!--Attributes-->
+<!--
+All HTML elements can have attributes
+Attributes provide additional information about elements
+Attributes are always specified in the start tag
+Attributes usually come in name/value pairs like: name="value"
+The style attribute is used to add styles to an element, such as color, font, size, and more
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page (2 line)
+The title attribute defines some extra information about an element
+The text in title attribute will be displayed as a tooltip when you mouse over the element
+It is recomended to use quotes around attribute values, but not it is not mandatory
+In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes
+-->
+
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <img src="img_something.jpg" alt="alternative text" width="500" height="600">
+    <p style="color:red;">This is a red paragraph.</p>
+    <p title="I'm a tooltip">This is a paragraph with a tooltip.</p>
+    <p title=Description of W3Schools>Test text</p>
+    <p title='John "ShotGun" Nelson'>Double or single quotes</p>
+    <p title="John 'ShotGun' Nelson">Double or single quotes</p>
+
+<!--Headings-->
+<!--
+HTML headings are defined with the <h1> to <h6> tags: h1 is the most important heading and h6 is least important
+Each heading has a default size, but we can specify font size using style attribute
+-->
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <h1 style="font-size:60px;">Heading 1</h1>
+
+<!--Paragraphs-->
+<!--
+The browser will automatically remove any extra spaces and lines when the page is displayed
+The <hr> tag defines a thematic break in an HTML page
+The HTML <br> element defines a line break
+The HTML <pre> element defines preformatted text
+The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks
+-->
+
+    <p>
+    This paragraph
+    contains a lot of lines
+    in the source code,
+    but the browser
+    ignores it.
+    </p>
+    <p>
+    This paragraph
+    contains         a lot of spaces
+    in the source         code,
+    but the        browser
+    ignores it.
+    </p>
+    <h1>This is heading 1</h1>
+    <p>This is some text.</p>
+    <hr>
+    <h2>This is heading 2</h2>
+    <p>This is some other text.</p>
+    <hr>
+    <p>This is<br>a paragraph<br>with line breaks.</p>
+    <pre>
+      My Bonnie lies over the ocean.
+
+      My Bonnie lies over the sea.
+
+      My Bonnie lies over the ocean.
+
+      Oh, bring back my Bonnie to me.
+    </pre>
+
+
+<!--Styles-->
+<!--
+<tagname style="property:value;">
+The CSS background-color property defines the background color for an HTML element
+The CSS color property defines the text color for an HTML element
+The CSS font-family property defines the font to be used for an HTML element
+The CSS font-size property defines the text size for an HTML element
+The CSS text-align property defines the horizontal text alignment for an HTML element
+-->
+
+    <h1 style="background-color:powderblue;">This is a heading</h1>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+    <h1 style="color:blue;">This is a heading</h1>
+    <p style="color:red;">This is a paragraph.</p>
+    <h1 style="font-family:verdana;">This is a heading</h1>
+    <p style="font-family:courier;">This is a paragraph.</p>
+    <h1 style="font-size:300%;">This is a heading</h1>
+    <p style="font-size:160%;">This is a paragraph.</p>
+    <h1 style="text-align:center;">Centered Heading</h1>
+    <p style="text-align:center;">Centered paragraph.</p>
+
+<!--Text Formatting-->
+<!--
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+-->
+    <b>This text is bold</b>
+    <strong>This text is important!</strong>
+    <i>This text is italic</i>
+    <em>This text is emphasized</em>
+    <small>This is some smaller text.</small>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <p>My favorite color is <del>blue</del> red.</p>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+    <p>This is <sub>subscripted</sub> text.</p>
+    <p>This is <sup>superscripted</sup> text.</p>
+
+<!--Quotation-->
+<!--
+<blockquote>, <q>, <abbr>, <address>, <cite>, and <bdo>
+-->
+
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+<!--Comments-->
+<!--
+Everything between the this arrows will be hidden from the display.
+-->
+
+<!--Colors-->
+<!--
+HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values
+HTML supports 140 standard color names.
+-->
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum...</p>
+    <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1> <!--RGB - red green blue -->
+    <h1 style="background-color:#ff6347;">...</h1> <!--HEX-->
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1> <!--HSL-->
+
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1> <!--the same rgb, but with Alpha value (transparency) -->
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+
+</body>
+</html>
