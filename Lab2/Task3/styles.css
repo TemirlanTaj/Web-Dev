@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    color: #24292f;
+    line-height: 1.5;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 24px 60px;
+    background-color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #24292f;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #57606a;
+    margin-bottom: 32px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background-color: #24292f;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #57606a;
+}
+
+/* Pricing Cards */
+.pricing-section {
+    padding: 60px 24px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 32px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pricing-card.featured {
+    border: 2px solid #0969da;
+    box-shadow: 0 8px 24px rgba(9, 105, 218, 0.12);
+}
+
+.pricing-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.pricing-card .description {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 24px;
+    min-height: 40px;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.price .currency {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price .amount {
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+.price .period {
+    font-size: 14px;
+    color: #57606a;
+    margin-left: 4px;
+}
+
+.price-note {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 24px;
+}
+
+.card-button {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 12px;
+    transition: all 0.2s;
+}
+
+.card-button.primary {
+    background-color: #24292f;
+    color: #ffffff;
+    border: none;
+}
+
+.card-button.primary:hover {
+    background-color: #57606a;
+}
+
+.card-button.secondary {
+    background-color: #ffffff;
+    color: #24292f;
+    border: 1px solid #d0d7de;
+}
+
+.card-button.secondary:hover {
+    background-color: #f6f8fa;
+}
+
+.card-button.featured-primary {
+    background-color: #0969da;
+    color: #ffffff;
+    border: none;
+}
+
+.card-button.featured-primary:hover {
+    background-color: #0550ae;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid #d0d7de;
+}
+
+.features-list li {
+    font-size: 14px;
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    color: #24292f;
+}
+
+.features-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1f883d;
+    font-weight: 600;
+}
+
+/* Add-ons Section */
+.addons-section {
+    padding: 60px 24px;
+    background-color: #f6f8fa;
+}
+
+.addons-section h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.addon-card {
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.addon-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.addon-card .addon-description {
+    font-size: 14px;
+    color: #57606a;
+    margin-bottom: 16px;
+}
+
+.addon-price {
+    font-size: 16px;
+    font-weight: 600;
+    color: #24292f;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .addons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .addons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price .amount {
+        font-size: 36px;
+    }
+}
