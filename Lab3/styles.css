@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: rgb(108, 108, 241);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main_container {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.todo_form_class {
+    margin-bottom: 25px;
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.todo_form_class label {
+    font-size: 18px;
+    color: darkblue;
+}
+
+.input_group_class {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.input_group_class input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input_group_class input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.input_group_class button {
+    padding: 12px 25px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input_group_class button:hover {
+    background-color: #5568d3;
+}
+
+.todo_list_class {
+    list-style-type: none;
+}
+
+.todo_item_class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.todo_item_class:hover {
+    background-color: #f8f9fa;
+}
+
+.todo_left_class {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+}
+
+.todo_left_class input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.todo_text_class {
+    font-size: 16px;
+    color: #314b65;
+}
+
+.todo_text_class.done {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+}
+
+.delete_btn_class {
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.delete_btn_class:hover {
+    background-color: #c0392b;
+}
